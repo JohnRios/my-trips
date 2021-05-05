@@ -10,9 +10,7 @@
     "prepare": "husky install",
     "test": "jest",
     "test:watch": "yarn test --watch",
-    "generate": "yarn plop --plopfile ./generators/plopfile.js",
-    "storybook": "start-storybook -s ./public -p 6006",
-    "build-storybook": "build-storybook -s ./public"
+    "generate": "yarn plop --plopfile ./generators/plopfile.js"
   },
   "lint-staged": {
     "src/**/*": [
@@ -21,20 +19,21 @@
     ]
   },
   "dependencies": {
+    "leaflet": "^1.7.1",
     "next": "10.1.3",
     "next-pwa": "^5.2.21",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-leaflet": "^3.1.0",
     "styled-components": "^5.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.14.0",
     "@babel/preset-typescript": "^7.13.0",
-    "@storybook/addon-essentials": "^6.2.9",
-    "@storybook/react": "^6.2.9",
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.6",
     "@types/jest": "^26.0.22",
+    "@types/leaflet": "^1.7.0",
     "@types/node": "^14.14.41",
     "@types/react": "^17.0.5",
     "@types/styled-components": "^5.1.9",
